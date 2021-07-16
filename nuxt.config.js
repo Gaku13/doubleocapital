@@ -55,15 +55,15 @@ module.exports = {
       { name: "theme-color", content: "#E60012" }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'apple-touch-icon', type: 'image/png', href: '/apple-touch-icon.png' },
-      { rel: "icon", type: "image/png", href: "/favicon-16x16.png", sizes: "16x16" },
-      { rel: "icon", type: "image/png", href: "/favicon-32x32.png", sizes: "32x32" },
-      { rel: "icon", type: "image/png", href: "/android-chrome-192x192.png", sizes: "192x192" },
-      { rel: "icon", type: "image/png", href: "/android-chrome-256x256.png", sizes: "256x256" },
-      { rel: "manifest", href: "/site.webmanifest" },
-      { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#231815" },
-      { rel: "shortcut icon", href: "/favicon.ico" }
+      { rel: 'icon', type: 'image/x-icon', href: `${env.BASE_URL}favicon.ico` },
+      { rel: 'apple-touch-icon', type: 'image/png', href: `${env.BASE_URL}apple-touch-icon.png` },
+      { rel: "icon", type: "image/png", href: `${env.BASE_URL}favicon-16x16.png`, sizes: "16x16" },
+      { rel: "icon", type: "image/png", href: `${env.BASE_URL}favicon-32x32.png`, sizes: "32x32" },
+      { rel: "icon", type: "image/png", href: `${env.BASE_URL}android-chrome-192x192.png`, sizes: "192x192" },
+      { rel: "icon", type: "image/png", href: `${env.BASE_URL}android-chrome-256x256.png`, sizes: "256x256" },
+      { rel: "manifest", href: `${env.BASE_URL}site.webmanifest` },
+      { rel: "mask-icon", href: `${env.BASE_URL}safari-pinned-tab.svg`, color: "#231815" },
+      { rel: "shortcut icon", href: `${env.BASE_URL}favicon.ico` }
     ]
   },
   //loading: false,
