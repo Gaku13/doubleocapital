@@ -1,12 +1,14 @@
+const environment = process.env.NODE_ENV || 'local'
+const env = require(`./env/${environment}.ts`)
+
 module.exports = {
-  target: 'static',
-  router: {
-    base: '/doubleocapital/'
-  },
   generate: {
     fallback: true
   },
   mode: 'spa',
+  router: {
+    base: env.BASE_URL
+  },
   head: {
     title: 'Double O Capital Ltd.',
     meta: [
