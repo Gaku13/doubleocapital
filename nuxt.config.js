@@ -18,7 +18,7 @@ module.exports = {
       }, {
         hid: 'description',
         name: 'description',
-        content: 'Double O Capital Ltd.'
+        content: 'Double O Capital Ltd.のwebサイトです。'
       }, {
         hid: 'og:type',
         property: 'og:type',
