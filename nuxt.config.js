@@ -1,5 +1,5 @@
 const environment = process.env.NODE_ENV || 'local'
-const env = require(`./env/${environment}.ts`)
+const env = require(`./env/${environment}.js`)
 
 module.exports = {
   generate: {
