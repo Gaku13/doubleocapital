@@ -1,5 +1,8 @@
-
 module.exports = {
+  target: 'static',
+  router: {
+    base: '/doubleocapital/'
+  },
   generate: {
     fallback: true
   },
@@ -68,7 +71,6 @@ module.exports = {
     throttle: 0
   },
   css: [
-    // 'modern-normalize/modern-normalize.css',
     '~/assets/css/style.styl'
   ],
   plugins: [
@@ -106,14 +108,16 @@ module.exports = {
   ],
   styleResources: {
     stylus: './assets/css/_variables.styl'
-  },/*
+  },
+  /*
   build: extend = function(config, ctx) {
     plugins: [['@babel/plugin-proposal-private-methods', { loose: true }]],
     return pass;
-  }*/
+  }
+  */
   build: {
     babel: {
       plugins: [['@babel/plugin-proposal-private-methods', { loose: true }]],
     }
   }
-};
+}
