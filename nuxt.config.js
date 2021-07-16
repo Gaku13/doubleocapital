@@ -6,6 +6,7 @@ module.exports = {
     fallback: true
   },
   mode: 'spa',
+  target: 'static',
   router: {
     base: env.BASE_URL
   },
