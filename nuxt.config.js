@@ -20,7 +20,7 @@ module.exports = {
       }, {
         hid: 'description',
         name: 'description',
-        content: 'Double O Capital Ltd.のwebサイトです。'
+        content: '持続可能な資産運用を誠実にサポートする、Double O Capital Ltd.のwebサイトです。'
       }, {
         hid: 'og:type',
         property: 'og:type',
