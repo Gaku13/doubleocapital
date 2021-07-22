@@ -101,7 +101,7 @@ ol.flow-container
       display block
       content ''
       padding-top 100%
-      background-image url('/images/misc/bg-flow1.jpg')
+      background-image url('~static/images/misc/bg-flow1.jpg')
       background-size cover
       background-position center center
       @media (max-width: 1023px)
@@ -165,15 +165,15 @@ ol.flow-container
     &:nth-child(2)
       margin-top 50px
       &::before
-        background-image url('/images/misc/bg-flow2.jpg')
+        background-image url('~static/images/misc/bg-flow2.jpg')
     &:nth-child(3)
       margin-top 0
       &::before
-        background-image url('/images/misc/bg-flow3.jpg')
+        background-image url('~static/images/misc/bg-flow3.jpg')
     &:nth-child(4)
       margin-top 50px
       &::before
-        background-image url('/images/misc/bg-flow4.jpg')
+        background-image url('~static/images/misc/bg-flow4.jpg')
 
 .title
   margin-bottom 30px

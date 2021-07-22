@@ -52,7 +52,7 @@ section#service
   margin-top -200px
   padding 400px 0 200px
   color $textContrast
-  background-image url('/images/misc/bg-service.jpg')
+  background-image url('~static/images/misc/bg-service.jpg')
   background-position center center
   background-size cover
   @media (max-width: 639px)

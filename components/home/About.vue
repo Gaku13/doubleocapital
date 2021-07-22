@@ -102,7 +102,7 @@
           font-size 12px
 .image-box
   width 36vw
-  background-image url('/images/misc/gov.jpg')
+  background-image url('~static/images/misc/gov.jpg')
   background-size cover
   background-position center center
   @media (max-width: 1023px)

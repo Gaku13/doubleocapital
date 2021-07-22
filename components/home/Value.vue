@@ -65,7 +65,7 @@
 
 .title-box
   color $textContrast
-  background-image url('/images/misc/bg-value.jpg')
+  background-image url('~static/images/misc/bg-value.jpg')
   background-position center center
   background-size cover
   .content

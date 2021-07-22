@@ -2,7 +2,7 @@
   section#hero
     .bg-container
       .hero-video
-        video( poster="./images/misc/bg-slide1.jpg" playsinline autoplay loop muted )
+        video( poster="~/static/images/misc/bg-slide1.jpg" playsinline autoplay loop muted )
           source( type="video/mp4" src="~static/video/bg.mp4" )
 
       //- .bg.bg1
@@ -43,19 +43,19 @@
     .card-list
       .card( @mouseover="$refs.carousel.goTo(1)" :class="{ 'active': this.currentSlide === 1 }" )
         .content
-          img( src="/images/icon/umbrella.svg" )
+          img( src="~/static/images/icon/umbrella.svg" )
           .text
             | 安心
             span with strong security
       .card( @mouseover="$refs.carousel.goTo(2)" :class="{ 'active': this.currentSlide === 2 }")
         .content
-          img( src="/images/icon/timer.svg" )
+          img( src="~/static/images/icon/timer.svg" )
           .text
             | 最新
             span resourceful information
       .card( @mouseover="$refs.carousel.goTo(3)" :class="{ 'active': this.currentSlide === 3 }")
         .content
-          img( src="/images/icon/roadmap.svg" )
+          img( src="~/static/images/icon/roadmap.svg" )
           .text
             | 継続
             span continuous support
@@ -130,19 +130,8 @@ export default {
     min-height calc(100vh - 80px)
     padding 40px
     z-index 1
-    // background-image url('/images/misc/bg-slide1.jpg')
-    // background-size cover
-    // background-position center
     @media (max-width: 639px)
       padding 20px
-    /*
-    &.bg2
-      background-image url('/images/misc/bg-slide2.jpg')
-    &.bg3
-      background-image url('/images/misc/bg-slide3.jpg')
-    &.bg4
-      background-image url('/images/misc/bg-slide4.jpg')
-    */
     &.bg2, &.bg3, &.bg4
       display flex
       align-items center
