@@ -2,9 +2,8 @@
   section#hero
     .bg-container
       .hero-video
-        video( poster="~/static/images/misc/bg-slide1.jpg" playsinline autoplay loop muted )
+        video( :poster="Poster" playsinline autoplay loop muted )
           source( type="video/mp4" src="~static/video/bg.mp4" )
-
       //- .bg.bg1
         .typo
           h1
@@ -76,6 +75,7 @@ export default {
   },
   data () {
     return {
+      Poster: require('~/static/images/misc/bg-slide1.jpg'),
       currentSlide: 0,
       options: {
         fade: true,
