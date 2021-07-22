@@ -3,7 +3,8 @@ const env = require(`./env/${environment}.js`)
 
 module.exports = {
   generate: {
-    fallback: true
+    fallback: true,
+    dir: 'docs'
   },
   mode: 'spa',
   target: 'static',
