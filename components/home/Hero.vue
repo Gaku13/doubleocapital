@@ -78,8 +78,8 @@ export default {
       currentSlide: 0,
       options: {
         fade: true,
-        // autoplay: true,
-        // autoplaySpeed: 7500,
+        autoplay: true,
+        autoplaySpeed: 7500,
         navButtons: false,
         // pauseOnHover: false,
         dots: false

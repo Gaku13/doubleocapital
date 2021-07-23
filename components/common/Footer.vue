@@ -14,7 +14,7 @@
           li
             nuxt-link( v-scroll-to="about" to ) About
           li
-            a( href="https://" target="_blank" rel="noopener noreferrer nofollow" ) Contact
+            a( href="https://forms.gle/kKj8qcvpc3HmzLVn7" target="_blank" rel="noopener noreferrer nofollow" ) Contact
         .copyright
           | © Double O Capital.Ltd
 

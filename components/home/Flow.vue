@@ -12,7 +12,7 @@
                 IconArrow
               .title 無料相談のご予約
               .text
-                a( href="https://" target="_blank" rel="noopener noreferrer nofollow" ) 「お問い合わせフォーム」
+                a( href="https://forms.gle/kKj8qcvpc3HmzLVn7" target="_blank" rel="noopener noreferrer nofollow" ) 「お問い合わせフォーム」
                 | にてご連絡ください。
                 br
                 | ３営業日以内に折り返しご連絡さしあげます。

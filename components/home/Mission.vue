@@ -17,7 +17,6 @@
             | 幅広い知識を持ち、顧客に対し親身になって物事を考えられることが重要だと考えます。
           p
             | 真に投資家のためになることは何か？本当の豊かさを追求する、それが当社の使命だと考えます。
-      //- a( href="https://" target="_blank" rel="noopener noreferrer nofollow" )
 
 </template>
 
