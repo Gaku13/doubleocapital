@@ -20,6 +20,14 @@ module.exports = {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1'
       }, {
+      }, {
+        name: 'robots',
+        content: 'noindex'
+      }, {
+      }, {
+        name: 'googlebot',
+        content: 'noindex'
+      }, {
         hid: 'description',
         name: 'description',
         content: '持続可能な資産運用を誠実にサポートする、Double O Capital Ltd.のwebサイトです。'
