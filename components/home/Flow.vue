@@ -8,11 +8,11 @@
         li.flow-card
           .content
             .inner
-              button
+              a.arrow-button( href="https://forms.gle/kKj8qcvpc3HmzLVn7" target="_blank" rel="noopener noreferrer nofollow" )
                 IconArrow
               .title 無料相談のご予約
               .text
-                a( href="https://forms.gle/kKj8qcvpc3HmzLVn7" target="_blank" rel="noopener noreferrer nofollow" ) 「お問い合わせフォーム」
+                a.text-button( href="https://forms.gle/kKj8qcvpc3HmzLVn7" target="_blank" rel="noopener noreferrer nofollow" ) 「お問い合わせフォーム」
                 | にてご連絡ください。
                 br
                 | ３営業日以内に折り返しご連絡さしあげます。
@@ -137,7 +137,10 @@ ol.flow-container
         left 20px
         right 20px
         padding 0
-      button
+      a.arrow-button
+        display flex
+        align-items center
+        justify-content center
         position absolute
         top 30px
         right 30px
@@ -156,7 +159,7 @@ ol.flow-container
         &:hover
           svg
             transform rotate(45deg)
-      a
+      a.text-button
         color $textContrast
         text-decoration underline
         transition color .2s

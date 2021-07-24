@@ -94,7 +94,7 @@ module.exports = {
   modules: [
     '@nuxtjs/svg',
     '@nuxtjs/style-resources',
-    'nuxt-agile',
+    // 'nuxt-agile',
     [
       '@nuxtjs/google-analytics', {
         id: ''

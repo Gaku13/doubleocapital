@@ -10,49 +10,51 @@
             | 持続可能な資産運用を
             br
             | 誠実にサポート
-      agile( :options="options" ref="carousel" @after-change="e => currentSlide = e.currentSlide" )
-        .bg.bg1
+      //- agile( :options="options" ref="carousel" @after-change="e => currentSlide = e.currentSlide" )
+      .bg-slides
+        .bg.bg1( :class="{ 'active': this.currentSlide === 0 }" )
           .typo
             h1
               | 持続可能な資産運用を
               br
               | 誠実にサポート
-        .bg.bg2
-          .inner( :class="{ 'active': this.currentSlide === 1 }" )
+        .bg.bg2( :class="{ 'active': this.currentSlide === 1 }" )
+          .inner
             .typo
               .tagline
                 | 一生涯マンツーマン型
-        .bg.bg3
-          .inner( :class="{ 'active': this.currentSlide === 2 }" )
+        .bg.bg3( :class="{ 'active': this.currentSlide === 2 }" )
+          .inner
             .typo
               .tagline
                 | 最新のマネートレンド
-        .bg.bg4
-          .inner( :class="{ 'active': this.currentSlide === 3 }" )
+        .bg.bg4( :class="{ 'active': this.currentSlide === 3 }" )
+          .inner
             .typo
               .tagline
                 | 継続的な価値ある提案
       .button
-        nuxt-link( v-scroll-to="'#contact'" to )
+        //- nuxt-link( v-scroll-to="'#contact'" to )
+        a( href="https://forms.gle/kKj8qcvpc3HmzLVn7" target="_blank" rel="noopener noreferrer nofollow" )
           .icon
             IconArrow
           .text
             | お問い合わせ
 
     .card-list
-      .card( @mouseover="$refs.carousel.goTo(1)" :class="{ 'active': this.currentSlide === 1 }" )
+      .card( @mouseover="changeSlide(1)" @mouseleave="resetSlide()" )
         .content
           img( src="~/static/images/icon/umbrella.svg" )
           .text
             | 安心
             span with strong security
-      .card( @mouseover="$refs.carousel.goTo(2)" :class="{ 'active': this.currentSlide === 2 }")
+      .card( @mouseover="changeSlide(2)" @mouseleave="resetSlide()" )
         .content
           img( src="~/static/images/icon/timer.svg" )
           .text
             | 最新
             span resourceful information
-      .card( @mouseover="$refs.carousel.goTo(3)" :class="{ 'active': this.currentSlide === 3 }")
+      .card( @mouseover="changeSlide(3)" @mouseleave="resetSlide()" )
         .content
           img( src="~/static/images/icon/roadmap.svg" )
           .text
@@ -76,6 +78,7 @@ export default {
   data () {
     return {
       currentSlide: 0,
+      /*
       options: {
         fade: true,
         autoplay: true,
@@ -83,9 +86,19 @@ export default {
         navButtons: false,
         // pauseOnHover: false,
         dots: false
-      }
+      }*/
     }
   },
+  methods: {
+    changeSlide(val) {
+      // console.log(val)
+      this.currentSlide = val
+      // console.log(this.currentSlide)
+    },
+    resetSlide() {
+      this.currentSlide = 0
+    }
+  }
 }
 </script>
 
@@ -95,10 +108,10 @@ export default {
   // min-height calc(100vh - 80px)
   @media (max-width: 767px)
     flex-wrap wrap
-
 .bg-container
   position relative
   width 66.6666vw
+  height calc(100vh - 80px)
   @media (max-width: 767px)
     width 100%
     height calc(75vh - 80px)
@@ -124,10 +137,16 @@ export default {
       background rgba(35, 24, 21, .8)
       z-index 0
   .bg
-    position relative
+    position absolute
+    top 0
+    left 0
     width 100%
-    min-height calc(100vh - 80px)
+    height 100%
+    // height calc(100vh - 80px)
     padding 40px
+    transition opacity .2s, visibility .2s
+    opacity 0
+    visibility hidden
     z-index 1
     @media (max-width: 639px)
       padding 20px
@@ -149,9 +168,16 @@ export default {
           border-bottom 1px solid $primary
           transform translateX(-100%)
           transition transform .75s ease-in-out .2s
+    &.active
+      opacity 1
+      visibility visible
+      .typo::before
+        transform translateX(0)
+    /*
     .inner.active
       .typo::before
         transform translateX(0)
+    */
   .typo
     h1
       display inline-block

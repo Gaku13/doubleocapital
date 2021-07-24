@@ -16,7 +16,6 @@
         "@nuxtjs/svg": "^0.1.12",
         "cross-env": "^7.0.3",
         "nuxt": "2.12.2",
-        "nuxt-agile": "^1.0.1",
         "nuxt-i18n": "^6.0.0",
         "swiper": "5.x",
         "vue-headroom": "^0.10.1",

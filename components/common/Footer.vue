@@ -1,5 +1,5 @@
 <template lang="pug">
-  footer#contact
+  footer
     .footer-container
       .logo
         Logo
@@ -8,11 +8,11 @@
           li
             nuxt-link( v-scroll-to="mission" to ) Mission
           li
-            nuxt-link( v-scroll-to="value" to ) Value
+            nuxt-link( v-scroll-to="{el: '#value', offset: -200 }" to ) Value
           li
-            nuxt-link( v-scroll-to="service" to ) Service
+            nuxt-link( v-scroll-to="{el: '#service', offset: 200 }" to ) Service
           li
-            nuxt-link( v-scroll-to="about" to ) About
+            nuxt-link( v-scroll-to="{el: '#about', offset: -80 }" to ) About
           li
             a( href="https://forms.gle/kKj8qcvpc3HmzLVn7" target="_blank" rel="noopener noreferrer nofollow" ) Contact
         .copyright

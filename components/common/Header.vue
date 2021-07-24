@@ -15,7 +15,8 @@
             li
               nuxt-link( v-scroll-to="about" to ) About
             li
-              nuxt-link( v-scroll-to="contact" to ) Contact
+              //-nuxt-link( v-scroll-to="about" to ) Contact
+              a( href="https://forms.gle/kKj8qcvpc3HmzLVn7" target="_blank" rel="noopener noreferrer nofollow" ) Contact
 </template>
 
 <script>
@@ -34,6 +35,7 @@ export default {
     return {
       service: {
         el: '#service',
+        offset: 200,
         onStart: function(el) {
           var nav;
           nav = document.querySelector('.nav-container');
@@ -42,14 +44,7 @@ export default {
       },
       about: {
         el: '#about',
-        onStart: function(el) {
-          var nav;
-          nav = document.querySelector('.nav-container');
-          return nav.classList.remove('show');
-        }
-      },
-      contact: {
-        el: '#contact',
+        offset: 0,
         onStart: function(el) {
           var nav;
           nav = document.querySelector('.nav-container');
