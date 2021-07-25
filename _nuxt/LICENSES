@@ -11,24 +11,9 @@
   */
 
 /*!
- * JavaScript Cookie v2.2.1
- * https://github.com/js-cookie/js-cookie
- *
- * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
- * Released under the MIT license
- */
-
-/*!
  * Vue.js v2.6.14
  * (c) 2014-2021 Evan You
  * Released under the MIT License.
- */
-
-/*!
- * cookie
- * Copyright(c) 2012-2014 Roman Shtylman
- * Copyright(c) 2015 Douglas Christopher Wilson
- * MIT Licensed
  */
 
 /*!
@@ -40,12 +25,6 @@
 /*!
  * vue-headroom v0.10.1
  * (c) dalphyx <wjcbmk@gmail.com>
- * Released under the MIT License.
- */
-
-/*!
- * vue-i18n v8.24.4 
- * (c) 2021 kazuya kawaguchi
  * Released under the MIT License.
  */
 
