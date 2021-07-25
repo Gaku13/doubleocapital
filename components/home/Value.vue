@@ -31,8 +31,8 @@
 <style lang="stylus" scoped>
 #value
   display flex
-  flex-wrap wrap
   @media (max-width: 767px)
+    flex-wrap wrap
     flex-direction column-reverse
 .text-box,
 .title-box

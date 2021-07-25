@@ -54,14 +54,14 @@ module.exports = {
       }, {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://double-o.jp/og-image.png'
+        content: 'https://haruka-sano.github.io/doubleocapital/og-image.png'
       }, {
         name: 'application-name',
         content: 'Double O Capital Ltd.'
       },
       { name: "msapplication-TileColor", content: "#E60012" },
-      { name: "msapplication-TileImage", content: "/mstile-150x150.png" },
-      { name: "msapplication-config", content: "/browserconfig.xml" },
+      { name: "msapplication-TileImage", content: `${env.BASE_URL}mstile-150x150.png` },
+      { name: "msapplication-config", content: `${env.BASE_URL}browserconfig.xml` },
       { name: "theme-color", content: "#E60012" }
     ],
     link: [
