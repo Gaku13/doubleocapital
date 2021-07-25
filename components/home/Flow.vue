@@ -46,12 +46,6 @@
                 | 当社は強引な勧誘や意味のない見直しなどの提案は一切いたしません。
 
 </template>
-<i18n>
-  {
-    "ja": {},
-    "en": {}
-  }
-</i18n>
 
 <style lang="stylus" scoped>
 section#flow

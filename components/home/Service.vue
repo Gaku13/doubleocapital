@@ -39,14 +39,6 @@
         .step.step-ex1
           | test
 </template>
-<i18n>
-  {
-    "ja": {},
-    "en": {}
-  }
-</i18n>
-
-
 <style lang="stylus" scoped>
 section#service
   margin-top -200px

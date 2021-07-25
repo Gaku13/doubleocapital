@@ -21,12 +21,6 @@
             .en
               | Value
 </template>
-<i18n>
-  {
-    "ja": {},
-    "en": {}
-  }
-</i18n>
 
 <style lang="stylus" scoped>
 #value

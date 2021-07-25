@@ -13,6 +13,9 @@ module.exports = {
   },
   head: {
     title: 'Double O Capital Ltd.',
+    htmlAttrs: {
+      lang: 'ja'
+    },
     meta: [
       {
         charset: 'utf-8'
@@ -89,34 +92,16 @@ module.exports = {
     {
       src: '~/plugins/vue-parallax-js',
       ssr: false
-    }, '~/plugins/scroll', '~/plugins/vue-scrollto', '~/plugins/i18n'
+    }, '~/plugins/scroll', '~/plugins/vue-scrollto'
   ],
   modules: [
     '@nuxtjs/svg',
     '@nuxtjs/style-resources',
-    // 'nuxt-agile',
     [
       '@nuxtjs/google-analytics', {
         id: ''
       }
     ],
-    [
-      'nuxt-i18n', {
-        parsePages: false,
-        locales: [
-          {
-            code: 'ja', iso: 'ja_JP'
-          }, {
-            code: 'en', iso: 'en-US'
-          }
-        ],
-        defaultLocale: 'ja',
-        vueI18n: {
-          fallbackLocale: 'ja'
-        },
-        vueI18nLoader: true
-      }
-    ]
   ],
   styleResources: {
     stylus: './assets/css/_variables.styl'

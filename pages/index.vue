@@ -8,13 +8,6 @@
     About
 </template>
 
-<i18n>
-  {
-    "ja": {},
-    "en": {}
-  }
-</i18n>
-
 <script>
 import Hero from '~/components/home/Hero.vue'
 import Mission from '~/components/home/Mission.vue'

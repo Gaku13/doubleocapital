@@ -49,12 +49,6 @@
             .jp お問い合わせ
 
 </template>
-<i18n>
-  {
-    "ja": {},
-    "en": {}
-  }
-</i18n>
 
 <style lang="stylus" scoped>
 .about-container

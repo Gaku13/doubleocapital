@@ -20,13 +20,6 @@
 
 </template>
 
-<i18n>
-  {
-    "ja": {},
-    "en": {}
-  }
-</i18n>
-
 <style lang="stylus" scoped>
 section#mission
   padding 180px 0

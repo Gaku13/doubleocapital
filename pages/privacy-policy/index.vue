@@ -12,12 +12,6 @@
           b lorem ipsum
           | lorem ipsum
 </template>
-<i18n>
-  {
-    "ja": {},
-    "en": {}
-  }
-</i18n>
 
 <style lang="stylus" scoped>
 main.policy

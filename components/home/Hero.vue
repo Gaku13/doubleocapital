@@ -62,12 +62,6 @@
             span continuous support
 
 </template>
-<i18n>
-  {
-    "ja": {},
-    "en": {}
-  }
-</i18n>
 <script>
 import IconArrow from '~/static/images/icon/arrow.svg?inline'
 
