@@ -30,7 +30,7 @@ module.exports = {
       }, {
         hid: 'description',
         name: 'description',
-        content: '持続可能な資産運用を誠実にサポートする、Double O Capital Ltd.のwebサイトです。一生涯マンツーマン型で最新のマネートレンドから継続的な価値ある提案をおこないます。'
+        content: '持続可能な資産運用を誠実にサポートする、Double O Capital Ltd.のwebサイトです。一生涯マンツーマン型で最新のマネートレンドから継続的な価値ある提案を。'
       }, {
         hid: 'og:type',
         property: 'og:type',
